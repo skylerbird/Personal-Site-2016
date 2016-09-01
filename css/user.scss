@@ -1,0 +1,472 @@
+/*
+* Variable Set
+*/
+$bgColor: #ffffff;
+$primaryColor: #242424;
+$secondaryColor: #0e82b0;
+
+$mainFont: 'Source Sans Pro', sans-serif;
+
+$smallText: 1rem;
+$med-smallText: 1.333rem;
+$medText: 1.777rem;
+$med-largeText: 2.369rem;
+$largeText: 3.157rem;
+$ex-largeText: 5.61rem;
+$maxText: 7.478rem;
+
+/*
+* Universal Styles
+*/
+*{
+  transition: ease-in-out 0.3s;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: $secondaryColor;
+}
+
+  a:visited{
+    color: $secondaryColor;
+  }
+
+h2{
+  font-size: $largeText;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h3{
+  font-size: $med-largeText;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/*
+* Body Styles
+*/
+body{
+  margin: 0;
+  width: 100vw;
+  font-family: $mainFont;
+  font-size: $smallText;
+  color: $primaryColor;
+  background-color: $bgColor;
+}
+
+#wrapper{
+  width: 100%;
+  max-width: 1920px;
+}
+
+/*
+* Navigation Styles
+*/
+nav{
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  background-color: $primaryColor;
+  color: $bgColor;
+  z-index: 3;
+}
+
+.navA{
+  position: absolute;
+  display: inline;
+  height: 100%;
+  width: 20px;
+  background-color: $secondaryColor;
+}
+
+  .navAl{
+    left: 0;
+  }
+
+  .navAr{
+    right: 0;
+  }
+
+ul{
+  margin: 25px 0 0px 55px;
+}
+
+ul, li{
+  list-style: none;
+  display: inline-block;
+  color: $bgColor;
+  word-spacing: 25px;
+  letter-spacing: 2px;
+}
+
+  li:hover{
+    color: $secondaryColor;
+  }
+
+.socialContainer{
+  display: inline-block;
+  float:right;
+  margin-right: 105px;
+}
+
+.social{
+  width: 35px;
+  height: 35px;
+  background-color: $bgColor;
+  display: inline-block;
+  margin: 10px 0 0 25px;
+  border-radius: 20%;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social:hover{
+  background-color: $secondaryColor;
+}
+
+  #social1{
+    background-image: url(../img/facebook-f.svg);
+  }
+
+  #social2{
+    background-image: url(../img/twitter.svg);
+  }
+
+  #social3{
+    background-image: url(../img/instagram.svg);
+  }
+
+  #social4{
+    background-image: url(../img/behance.svg);
+    background-size: 35px 25px;
+  }
+
+/*
+* Section Content Styles
+*/
+.section{
+  width: 100%;
+  position: relative;
+}
+
+/*
+* Profile Styles
+*/
+#profile{
+  height: 100vh;
+  max-height: 1080px;
+  background-image: url(../img/BG.jpg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#logo{
+  position: absolute;
+  font-size: $maxText;
+  left: 20vw;
+  top: 17vh;
+  line-height: 0.4;
+  letter-spacing: 2px;
+}
+
+#subLogo{
+  color: $secondaryColor;
+  font-size: $med-largeText;
+  margin-left: 200px;
+}
+
+#s1Foot{
+  position: absolute;
+  bottom: 20px;
+  right: 49%;
+  font-size: $med-smallText;
+  color: $bgColor;
+}
+
+#arrow-down{
+  height: $med-smallText;
+  width: $med-smallText;
+}
+
+/*
+* Portfolio Styles
+*/
+.portTitle{
+  margin: 50px 0 75px 0;
+}
+
+.portSub{
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.portText{
+  width: 49%;
+  display: inline-block;
+  padding: 0 75px 0 50px;
+  font-size: $med-smallText;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 50px;
+}
+
+.portImg{
+  width: 49vw;
+  height: 33vw;
+  display: inline-block;
+}
+
+  #portImg1, #portImg3{
+    box-shadow: 10px 0px 31px -10px rgba(0,0,0,0.48);
+    }
+
+  #portText1, #portText2{
+    box-shadow: 0px 10px 31px -10px rgba(0,0,0,0.48);
+    z-index: 2;
+  }
+
+  #portImg2{
+    box-shadow: -10px 0px 31px -10px rgba(0,0,0,0.48);
+  }
+
+/*
+* Contact Styles
+*/
+#contact{
+  background-color: $primaryColor;
+  color: $bgColor;
+  font-size: $med-smallText;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+#contactTitle{
+  color: $bgColor;
+  padding: 50px 0 75px 0;
+}
+
+#contactInfo, #contactForm{
+  width: 49%;
+  display: inline-block;
+}
+
+#contactInfo{
+  padding-left: 75px;
+  line-height: 3;
+}
+
+#contactForm{
+  padding-right: 75px;
+  float: right;
+}
+
+#contactForm label{
+  display: block;
+}
+
+#contactForm .finput{
+  background-color: $primaryColor;
+  border: 2px solid $secondaryColor;
+  padding: 5px;
+  color: white;
+  width: 80%;
+}
+
+textarea{
+  background-color: $primaryColor;
+  border: 2px solid $secondaryColor;
+  padding: 5px;
+  color: white;
+  width: 80%;
+  height: 150px;
+}
+
+#submit{
+  background-color: $secondaryColor;
+  box-sizing: border-box;
+  padding: 5px;
+  color: $bgColor;
+  width: 100px;
+  height: 45px;
+  border: none;
+  margin-top: 10px;
+}
+
+.icon{
+  width: $med-smallText;
+  height: $med-smallText;
+  margin-right: $smallText;
+  display: inline-block;
+}
+
+/*
+* Logo Fix
+*/
+@media (max-width: 1150px){
+  #profile{
+    background-position: center;
+  }
+
+  #logo{
+    font-size: $ex-largeText;
+  }
+
+  #subLogo{
+    margin-left: 150px;
+  }
+}
+
+/*
+* Tablet Styles
+*/
+@media (max-width: 850px){
+  .portSub{
+    display: block;
+  }
+
+  .portImg, .portText{
+    display: block;
+  }
+
+  .portText{
+    width: 100%;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 31px -10px rgba(0,0,0,0.48);
+  }
+
+  .portImg{
+    width: 100vw;
+    height: 62vw;
+    box-shadow: none;
+  }
+
+  #portSub2{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  #contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #contactInfo, #contactForm{
+    width: 100%;
+    margin: 0 0 50px 0;
+    padding: 0;
+  }
+
+  .chead{
+    text-align: left;
+    padding-left: 10%;
+  }
+
+  #submit{
+    position: absolute;
+    right: 10%;
+  }
+}
+
+@media (max-width: 757px){
+  h2{
+    font-size: $med-largeText;
+  }
+
+  h3{
+    font-size: $medText;
+  }
+
+  .open{
+    margin-top: $smallText;
+  }
+
+  #toggleS{
+    height: $largeText;
+    width: $largeText;
+    background-color: $primaryColor;
+    display: block;
+    border-radius: $smallText;
+    position: fixed;
+    z-index: 3;
+    top: $smallText;
+    right: $smallText;
+    background-image: url(../img/navicon.svg);
+    background-size: $med-largeText;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #toggleS:hover, #toggleS:focus{
+    background-image: url(../img/navicon-d.svg);
+  }
+
+  .down{
+    margin-top: 200px;
+  }
+
+  // #toggler:checked ~ #toggleS{
+  //
+  // }
+
+  nav{
+    height: auto;
+    padding: 25px;
+    width: 90%;
+    left: 5%;
+    margin-top: -500px;
+    border-radius: $smallText;
+  }
+
+  .navA{
+    display:none;
+  }
+
+  ul, .socialContainer{
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+    display: block;
+    line-height: $med-largeText;
+    padding: 0;
+  }
+
+  .social{
+    display: block;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
+  .mBreak{
+    display: inline-block;
+  }
+
+  #logo{
+    left: 5%;
+  }
+
+  .portText{
+    padding: 0 $smallText 0 $smallText;
+  }
+}
+
+@media(max-width:451px){
+  #logo{
+    font-size: $largeText;
+  }
+
+  #subLogo{
+    font-size: $med-smallText;
+    margin-left: 80px;
+  }
+}

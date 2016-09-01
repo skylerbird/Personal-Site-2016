@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Designed by: Skyler Bird
+    Twitter: @Skylerdesigns
+
+# THANKS
+
+    unsplash.com
+    fontawesome.io
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, SASS
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
