@@ -55,6 +55,7 @@ body{
   font-size: $smallText;
   color: $primaryColor;
   background-color: $bgColor;
+  overflow-x: hidden;
 }
 
 #wrapper{
