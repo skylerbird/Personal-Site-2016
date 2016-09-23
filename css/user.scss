@@ -1,23 +1,34 @@
-/*
-* Variable Set
-*/
-$bgColor: #ffffff;
-$primaryColor: #242424;
+//Variable Set
+$bgColor:        #ffffff;
+$primaryColor:   #242424;
 $secondaryColor: #0e82b0;
 
 $mainFont: 'Source Sans Pro', sans-serif;
 
-$smallText: 1rem;
+$smallText:     1rem;
 $med-smallText: 1.333rem;
-$medText: 1.777rem;
+$medText:       1.777rem;
 $med-largeText: 2.369rem;
-$largeText: 3.157rem;
-$ex-largeText: 5.61rem;
-$maxText: 7.478rem;
+$largeText:     3.157rem;
+$ex-largeText:  5.61rem;
+$maxText:       7.478rem;
 
-/*
-* Universal Styles
-*/
+//Keyframes
+@keyframes bounce{
+  0%{transform: translateY(0px);}
+
+  20%{transform: translateY(-20px);}
+
+  30%{transform: translateY(10px);}
+
+  35%{transform: translateY(0px);}
+
+  40%{transform: translateY(10px);}
+
+  100%{transform: translateY(0px);}
+}
+
+//Universal Styles
 *{
   transition: ease-in-out 0.3s;
   box-sizing: border-box;
@@ -28,9 +39,7 @@ a{
   color: $secondaryColor;
 }
 
-  a:visited{
-    color: $secondaryColor;
-  }
+  a:visited{color: $secondaryColor;}
 
 h2{
   font-size: $largeText;
@@ -45,9 +54,7 @@ h3{
   margin-bottom: 25px;
 }
 
-/*
-* Body Styles
-*/
+//Body Styles
 body{
   margin: 0;
   width: 100vw;
@@ -63,9 +70,7 @@ body{
   max-width: 1920px;
 }
 
-/*
-* Navigation Styles
-*/
+//Navigation Styles
 nav{
   position: fixed;
   width: 100%;
@@ -83,17 +88,11 @@ nav{
   background-color: $secondaryColor;
 }
 
-  .navAl{
-    left: 0;
-  }
+  .navAl{left: 0;}
 
-  .navAr{
-    right: 0;
-  }
+  .navAr{right: 0;}
 
-ul{
-  margin: 25px 0 0px 55px;
-}
+ul{margin: 25px 0 0px 55px;}
 
 ul, li{
   list-style: none;
@@ -103,9 +102,7 @@ ul, li{
   letter-spacing: 2px;
 }
 
-  li:hover{
-    color: $secondaryColor;
-  }
+  li:hover{color: $secondaryColor;}
 
 .socialContainer{
   display: inline-block;
@@ -125,38 +122,26 @@ ul, li{
   background-position: center;
 }
 
-.social:hover{
-  background-color: $secondaryColor;
-}
+.social:hover{background-color: $secondaryColor;}
 
-  #social1{
-    background-image: url(../img/facebook-f.svg);
-  }
+  #social1{background-image: url(../img/facebook-f.svg);}
 
-  #social2{
-    background-image: url(../img/twitter.svg);
-  }
+  #social2{background-image: url(../img/twitter.svg);}
 
-  #social3{
-    background-image: url(../img/instagram.svg);
-  }
+  #social3{background-image: url(../img/instagram.svg);}
 
   #social4{
     background-image: url(../img/behance.svg);
     background-size: 35px 25px;
   }
 
-/*
-* Section Content Styles
-*/
+//Section Content Styles
 .section{
   width: 100%;
   position: relative;
 }
 
-/*
-* Profile Styles
-*/
+//Profile Styles
 #profile{
   height: 100vh;
   max-height: 1080px;
@@ -193,14 +178,11 @@ ul, li{
 #arrow-down{
   height: $largeText;
   width: $largeText;
+  animation: bounce 1.5s ease-in-out 1s 20 normal forwards running;
 }
 
-/*
-* Portfolio Styles
-*/
-.portTitle{
-  margin: 50px 0 75px 0;
-}
+//Portfolio Styles
+.portTitle{margin: 50px 0 75px 0;}
 
 .portSub{
   width: 100%;
@@ -237,9 +219,7 @@ ul, li{
     box-shadow: -10px 0px 31px -10px rgba(0,0,0,0.48);
   }
 
-/*
-* Contact Styles
-*/
+//Contact Styles
 #contact{
   background-color: $primaryColor;
   color: $bgColor;
@@ -268,9 +248,7 @@ ul, li{
   float: right;
 }
 
-#contactForm label{
-  display: block;
-}
+#contactForm label{display: block;}
 
 #contactForm .finput{
   background-color: $primaryColor;
@@ -307,34 +285,21 @@ textarea{
   display: inline-block;
 }
 
-/*
-* Logo Fix
-*/
+//Logo Fix
 @media (max-width: 1150px){
-  #profile{
-    background-position: center;
-  }
+  #profile{background-position: center;}
 
-  #logo{
-    font-size: $ex-largeText;
-  }
+  #logo{font-size: $ex-largeText;}
 
-  #subLogo{
-    margin-left: 150px;
-  }
+  #subLogo{margin-left: 150px;}
 }
 
-/*
-* Tablet Styles
-*/
+//Tablet Styles
 @media (max-width: 850px){
-  .portSub{
-    display: block;
-  }
+  .portSub{display: block;}
 
-  .portImg, .portText{
-    display: block;
-  }
+  .portImg,
+  .portText{display: block;}
 
   .portText{
     width: 100%;
@@ -378,17 +343,11 @@ textarea{
 }
 
 @media (max-width: 757px){
-  h2{
-    font-size: $med-largeText;
-  }
+  h2{font-size: $med-largeText;}
 
-  h3{
-    font-size: $medText;
-  }
+  h3{font-size: $medText;}
 
-  .open{
-    margin-top: $smallText;
-  }
+  .open{margin-top: $smallText;}
 
   #toggleS{
     height: $largeText;
@@ -406,17 +365,10 @@ textarea{
     background-position: center;
   }
 
-  #toggleS:hover, #toggleS:focus{
-    background-image: url(../img/navicon-d.svg);
-  }
+  #toggleS:hover,
+  #toggleS:focus{background-image: url(../img/navicon-d.svg);}
 
-  .down{
-    margin-top: 200px;
-  }
-
-  // #toggler:checked ~ #toggleS{
-  //
-  // }
+  .down{margin-top: 200px;}
 
   nav{
     height: auto;
@@ -427,11 +379,10 @@ textarea{
     border-radius: $smallText;
   }
 
-  .navA{
-    display:none;
-  }
+  .navA{display:none;}
 
-  ul, .socialContainer{
+  ul,
+  .socialContainer{
     margin: 0;
     padding: 0;
   }
@@ -448,23 +399,15 @@ textarea{
     margin-bottom: 25px;
   }
 
-  .mBreak{
-    display: inline-block;
-  }
+  .mBreak{display: inline-block;}
 
-  #logo{
-    left: 5%;
-  }
+  #logo{left: 5%;}
 
-  .portText{
-    padding: 0 $smallText 0 $smallText;
-  }
+  .portText{padding: 0 $smallText 0 $smallText;}
 }
 
 @media(max-width:451px){
-  #logo{
-    font-size: $largeText;
-  }
+  #logo{font-size: $largeText;}
 
   #subLogo{
     font-size: $med-smallText;
