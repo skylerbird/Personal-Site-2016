@@ -10,7 +10,6 @@ html {
 
 //These selection rule sets have to be separate.
 //Customize the background color to match your design.
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -22,8 +21,6 @@ html {
 }
 
 //A better looking default horizontal rule
-
-
 hr {
     display: block;
     height: 1px;
@@ -38,7 +35,6 @@ hr {
 //https://github.com/h5bp/html5-boilerplate/issues/440
 
 //Remove default fieldset styles.
-
 fieldset {
     border: 0;
     margin: 0;
@@ -46,13 +42,9 @@ fieldset {
 }
 
 //Allow only vertical resizing of textareas.
-
-textarea {
-    resize: vertical;
-}
+textarea {resize: vertical;}
 
 //Browser Upgrade Prompt
-
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -60,17 +52,11 @@ textarea {
     padding: 0.2em 0;
 }
 
-//Author's custom styles
-
-//Helper classes
-
 //Hide visually and from screen readers
-
 .hidden {display: none !important;}
 
 //Hide only visually, but have it available for screen readers:
 //http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -85,7 +71,6 @@ textarea {
 //Extends the .visuallyhidden class to allow the element
 //to be focusable when navigated to via the keyboard:
 //https://www.drupal.org/node/897638
-
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -97,10 +82,7 @@ textarea {
 }
 
 //Hide visually and from screen readers, but maintain layout
-
 .invisible {visibility: hidden;}
-
- Clearfix: contain floats
 
 // For modern browsers
 // 1. The space content is one way to avoid an Opera bug when the
@@ -125,7 +107,6 @@ textarea {
 //Print styles.
 //Inlined to avoid the additional HTTP request:
 //http://www.phpied.com/delay-loading-your-print-css/
-
 @media print {
     *,
     *:before,
@@ -162,7 +143,6 @@ textarea {
 
      //Printing Tables:
      //http://css-discuss.incutio.com/wiki/Printing_Tables
-
     thead {display: table-header-group;}
 
     tr,
